@@ -38,6 +38,8 @@ public class OrderServiceImpl extends TimeLoggerUtil implements OrderServiceInte
             long startTime = startTimeLogger();
             LOGGER.info("Iniciando processamento de pedido...");
 
+
+
             List<ProductDomain> products = orderRequest.getProductsRequest()
                     .parallelStream()
                     .map(productMapper::toDomain)

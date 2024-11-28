@@ -1,10 +1,7 @@
 package com.sqs.microservice.receiver.controller;
 
 import com.sqs.microservice.receiver.domain.DTO.OrderRequest;
-import com.sqs.microservice.receiver.domain.OrderDomain;
 import com.sqs.microservice.receiver.service.OrderServiceInterface;
-import com.sqs.microservice.receiver.service.SendOrderSqsInterface;
-import io.awspring.cloud.sqs.operations.SqsTemplate;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +19,9 @@ import java.util.Map;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/order")
+@RequestMapping("/order")
 @Validated
-public class ProductQueueController {
+public class OrderQueueController {
 
     @Autowired
     private OrderServiceInterface service;

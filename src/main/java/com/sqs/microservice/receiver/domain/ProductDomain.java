@@ -13,4 +13,5 @@ public class ProductDomain {
     private BigDecimal priceProduct;
     private int amount;
 
+
 }

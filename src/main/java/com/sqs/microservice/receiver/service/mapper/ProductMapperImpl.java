@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class ProductMapperImpl implements ProductMapperInterface {
 
     public ProductDomain toDomain(ProductRequest productRequest) {
+
         return new ProductDomain(
                 productRequest.getNameProduct(),
                 productRequest.getPriceProduct(),

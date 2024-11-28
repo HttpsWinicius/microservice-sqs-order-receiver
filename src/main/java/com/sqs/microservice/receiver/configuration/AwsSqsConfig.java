@@ -1,5 +1,7 @@
 package com.sqs.microservice.receiver.configuration;
 
+import com.sqs.microservice.receiver.domain.SqsProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import software.amazon.awssdk.regions.Region;
@@ -10,12 +12,14 @@ import java.net.URI;
 @Configuration
 public class AwsSqsConfig {
 
-    private static final String URI_LOCALSTACK = "http://localhost:4566";
+    @Autowired
+    private SqsProperties sqsProperties;
+
 
     @Bean
     public SqsAsyncClient sqsAsyncClient() {
         return SqsAsyncClient.builder()
-                .endpointOverride(URI.create(URI_LOCALSTACK))
+                .endpointOverride(URI.create(sqsProperties.getUri()))
                 .region(Region.US_EAST_1)
                 .build();
     }

@@ -1,9 +1,7 @@
 package com.sqs.microservice.receiver.controller;
 
 import com.sqs.microservice.receiver.domain.DTO.OrderRequest;
-import com.sqs.microservice.receiver.domain.OrderDomain;
 import com.sqs.microservice.receiver.service.OrderServiceInterface;
-import io.awspring.cloud.sqs.operations.SqsTemplate;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,26 +15,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/api/order")
-@Validated
-public class ProductQueueController {
+import java.util.Map;
+import java.util.UUID;
 
-    private static final String SQS_URL = "https://localhost.localstack.cloud:4566/000000000000/queue_order_receiver.fifo";
+@RestController
+@RequestMapping("/order")
+@Validated
+public class OrderQueueController {
 
     @Autowired
     private OrderServiceInterface service;
-    @Autowired
-    private SqsTemplate sqsTemplate;
 
 
     @PostMapping("/save")
     public ResponseEntity<?> saveOrderSqs(@RequestBody @Valid OrderRequest orderRequest) {
 
-        OrderDomain orderDomain = service.createOrder(orderRequest);
-        sqsTemplate.send(SQS_URL, orderDomain);
+        UUID orderId = service.createOrder(orderRequest);
 
-        return new ResponseEntity<>(orderDomain, HttpStatus.CREATED);
+        return new ResponseEntity<>(Map.of("orderId", orderId), HttpStatus.CREATED);
     }
 
 

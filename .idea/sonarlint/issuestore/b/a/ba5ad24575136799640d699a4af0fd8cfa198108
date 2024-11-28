@@ -1,0 +1,13 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„×·2J$ad0b016f-4ab6-488b-938b-f31db4a99b27
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„×·2J$6b6531d8-031f-49a9-80a6-7dbfbc14a486
+Ÿ
+java:S1450 "WRemove the "apiError" field and declare it as a local variable in the relevant methods.(ö¾¸ úÿÿÿÿ8ç¢Ü·2J$c56e4e7c-e301-499c-93de-fa3b556d5d72
+n
+java:S1452$"&Remove usage of generic wildcard type.(ÆñŞùÿÿÿÿ8—„×·2J$1e74f0b7-d9ee-4b9f-b581-5805a6674813
+y
+java:S2696+"6Make the enclosing method "static" or remove this set.(®Ûïİ8¥òÛ·2J$3d0e206d-d125-445f-8989-ff8849406d00
+R
+java:S2209+"5Change this instance-reference to a static reference.(®Ûïİ8Æ¿Ü·2

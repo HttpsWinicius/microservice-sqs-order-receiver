@@ -1,0 +1,11 @@
+com\sqs\microservice\receiver\service\OrderServiceInterface.class
+com\sqs\microservice\receiver\service\OrderServiceImpl.class
+com\sqs\microservice\receiver\ReceiverApplication.class
+com\sqs\microservice\receiver\controller\ProductQueueController.class
+com\sqs\microservice\receiver\domain\OrderDomain.class
+com\sqs\microservice\receiver\domain\DTO\OrderRequestDTO.class
+com\sqs\microservice\receiver\domain\ProductDomain.class
+com\sqs\microservice\receiver\domain\DTO\ProductRequestDTO.class
+com\sqs\microservice\receiver\service\mapper\ProductMapper.class
+com\sqs\microservice\receiver\configuration\AwsSqsConfig.class
+com\sqs\microservice\receiver\error\ApiError.class

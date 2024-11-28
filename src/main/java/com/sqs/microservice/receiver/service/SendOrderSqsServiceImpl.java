@@ -26,7 +26,7 @@ public class SendOrderSqsServiceImpl extends TimeLoggerUtil implements SendOrder
         try {
             long startTime = startTimeLogger();
             LOGGER.info("Iniciando envio para fila sqs...");
-            sqsTemplate.send(sqsProperties.getUrl(), orderDomain);
+            sqsTemplate.sendAsync(sqsProperties.getUrl(), orderDomain);
 
             LOGGER.info("Tempo total para enviar pra fila sqs {} segundos", endTimeLogger(startTime));
             LOGGER.info("Envio para fila sqs finalizado...");

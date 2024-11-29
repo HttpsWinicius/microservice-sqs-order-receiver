@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 @Data
 public class SqsProperties {
 
-    private String uri;
     private String url;
 
 }

@@ -14,4 +14,7 @@ public class ProductDomain {
     private int amount;
 
 
+    public ProductDomain() {
+
+    }
 }

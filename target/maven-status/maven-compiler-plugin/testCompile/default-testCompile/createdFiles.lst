@@ -1,1 +1,6 @@
+com\sqs\microservice\receiver\config\AwsSqsConfigTest.class
+com\sqs\microservice\receiver\service\OrderServiceImplTest.class
+com\sqs\microservice\receiver\domain\OrderDomainTest.class
 com\sqs\microservice\receiver\ReceiverApplicationTests.class
+com\sqs\microservice\receiver\domain\dto\OrderRequestTest.class
+com\sqs\microservice\receiver\config\AsyncConfigTest.class

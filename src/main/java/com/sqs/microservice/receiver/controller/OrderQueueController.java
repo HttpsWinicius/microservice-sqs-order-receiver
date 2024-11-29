@@ -2,6 +2,7 @@ package com.sqs.microservice.receiver.controller;
 
 import com.sqs.microservice.receiver.domain.DTO.OrderRequest;
 import com.sqs.microservice.receiver.service.OrderServiceInterface;
+import io.awspring.cloud.sqs.annotation.SqsListener;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;

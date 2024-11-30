@@ -1,6 +1,11 @@
 A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\config\AsyncConfigTest.java
 A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\config\AwsSqsConfigTest.java
 A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\domain\dto\OrderRequestTest.java
+A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\domain\dto\ProductRequestTest.java
 A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\domain\OrderDomainTest.java
+A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\domain\ProductDomainTest.java
+A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\domain\SqsPropertiesTest.java
+A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\exception\GlobalExceptionHandlerTest.java
 A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\ReceiverApplicationTests.java
 A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\service\OrderServiceImplTest.java
+A:\Github\microservice-sqs-order-receiver\src\test\java\com\sqs\microservice\receiver\TestConfig.java
